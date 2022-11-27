@@ -1,6 +1,10 @@
 body {
-    background-color:cadetblue;
-}
+    background-color: #0a1215;
+    background-image: url(https://1.bp.blogspot.com/-Bg1UIlljZfI/XYwLfeBJxEI/AAAAAAAAAP0/MJzDLZK9VhosBAdQYEZzOT9pKZotBGu8gCLcBGAsYHQ/s1600/71306799_537498207079522_8140670644787347456_n.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
 
 .red-on-true {
     box-shadow: -1px -1px 86px 45px rgba(255,0,0,0.95);
@@ -19,3 +23,30 @@ body {
     -webkit-box-shadow: -1px -1px 86px 45px rgba(18,212,5,0.96);
     -moz-box-shadow: -1px -1px 86px 45px rgba(18,212,5,0.96);
 }
+
+.semaforo {
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1000;
+}
+/* 
+img {
+    position: absolute; 
+    position: relative;
+    position: fixed;
+    left: 0px;
+    top: 0px; 
+}  
+ */
+ /* .mi_padre {
+    position: relative;
+    z-index: 10;
+}
+.mi_hijo {
+    position: absolute;
+    z-index: 1000;
+} */
