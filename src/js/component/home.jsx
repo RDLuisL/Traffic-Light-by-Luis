@@ -12,17 +12,19 @@ function Home() {
 	const [greenPower, setGreenPower] = useState(false);
 
 	return (
-		<img src="https://imagizer.imageshack.com/img923/6300/lPMSQi.png" className="semaforo background-image">
-					<div className="overlay lights d-flex justify-content-center flex-column align-items-center pt-4">
+		<div className="position-absolute">
+				<img src="https://imagizer.imageshack.com/img923/6300/lPMSQi.png" className="semaforo position-absolute background-image"></img>
+					<div className="position-relative lights d-flex justify-content-center flex-column align-items-center pt-4">
 							<div onClick={() => {
 								setRedPower(!redPower); 
 								setYellowPower(false); 
 								setGreenPower(false);}}
 								className={`red-on-${redPower}`}
 								style={{
-									backgroundColor: "red",
-									width: "4rem",
-									height: "4rem",
+									backgroundColor: "#DB050C",
+									width: "30px",
+									height: "37px",
+									marginBottom: "10px",
 									borderRadius: "50%"}}>
 							</div>
 							<div
@@ -33,9 +35,10 @@ function Home() {
 								} }
 								className={`yellow-on-${yellowPower}`}
 								style={{
-									backgroundColor: "yellow",
-									width: "4rem",
-									height: "4rem",
+									backgroundColor: "#DA9B16",
+									width: "30px",
+									height: "40px",
+									marginTop: "3px",
 									borderRadius: "50%"
 								}}></div>
 							<div
@@ -46,15 +49,17 @@ function Home() {
 								} }
 								className={`green-on-${greenPower}`}
 								style={{
-									backgroundColor: "green",
-									width: "4rem",
-									height: "4rem",
+									backgroundColor: "#027D35",
+									width: "30px",
+									height: "33px",
+									marginTop: "12px",
 									borderRadius: "50%"}}>
 							</div>
 					</div>
-		</img>
+					</div>
+		
 	);
 }
-
+<p className="leyend">click on trafic light bulbs to turn on</p>
 export default Home;
 

@@ -6,10 +6,21 @@ body {
     background-position: center;
   }
 
+.leyend{
+    font-size: 40px;
+    color: white;
+    z-index: +20;
+}
+
+.lights {
+    margin-left: 117px;
+}
+
+
 .red-on-true {
-    box-shadow: -1px -1px 86px 45px rgba(255,0,0,0.95);
-    -webkit-box-shadow: -1px -1px 86px 45px rgba(255,0,0,0.95);
-    -moz-box-shadow: -1px -1px 86px 45px rgba(255,0,0,0.95);
+    box-shadow: -1px -1px 86px 45px #DB050C;
+    -webkit-box-shadow: -1px -1px 86px 45px #DB050C;
+    -moz-box-shadow: -1px -1px 86px 45px #DB050C;
 }
 
 .yellow-on-true {
@@ -25,14 +36,13 @@ body {
 }
 
 .semaforo {
+    margin-top: 10px;
     position: relative;
-    z-index: 10;
+    z-index: -10;
+    width: 100px;
+    margin-left: 70px;
 }
 
-.overlay {
-    position: absolute;
-    z-index: 1000;
-}
 /* 
 img {
     position: absolute; 
